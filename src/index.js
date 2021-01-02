@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<App />,document.getElementById('root')
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>
+    , document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
