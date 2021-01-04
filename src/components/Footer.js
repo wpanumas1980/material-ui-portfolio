@@ -1,41 +1,35 @@
-import { BottomNavigation, BottomNavigationAction, makeStyles } from '@material-ui/core'
-import { Facebook, Instagram, Twitter } from '@material-ui/icons'
-import React from 'react'
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+import Facebook from "@material-ui/icons/Facebook";
+import Twitter from "@material-ui/icons/Twitter";
+import Instagram from "@material-ui/icons/Instagram";
 
 const useStyles = makeStyles({
-    root: {
-        '& .MuiBottomNavigationAction-root': {
-            minWidth: 0,
-            maxWidth: 250,
-        },
-        '& .MuiSvgIcon-root':{
-            fill:'tan',
-            '&:hover':{
-                fill: 'tomato',
-                fontSize:'1.8rem'
-            }
-        }
-    }
-})
-export default function Footer() {
-    const classes = useStyles();
-    return (
-        <BottomNavigation width='auto' style={{ background: '#222' }}>
-            <BottomNavigationAction
-                className={classes.root}
-                style={{ padding: 0 }}
-                icon={<Facebook />}
-            />
-            <BottomNavigationAction
-                className={classes.root}
-                style={{ padding: 0 }}
-                icon={<Twitter />}
-            />
-            <BottomNavigationAction
-                className={classes.root}
-                style={{ padding: 0 }}
-                icon={<Instagram />}
-            />
-        </BottomNavigation>
-    )
-}
+  bottomNavContainer: {
+    background: "#222",
+  },
+  root: {
+    "& .MuiSvgIcon-root": {
+      fill: "tan",
+      "&:hover": {
+        fill: "tomato",
+        fontSize: "1.8rem",
+      },
+    },
+  },
+});
+
+const Footer = () => {
+  const classes = useStyles();
+
+  return (
+    <BottomNavigation className={classes.bottomNavContainer}>
+      <BottomNavigationAction icon={<Facebook />} className={classes.root} />
+      <BottomNavigationAction icon={<Twitter />} className={classes.root} />
+      <BottomNavigationAction icon={<Instagram />} className={classes.root} />
+    </BottomNavigation>
+  );
+};
+export default Footer;
