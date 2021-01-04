@@ -10,6 +10,11 @@ const useStyles = makeStyles(theme => ({
         top:'50%',
         left:'50%',
         transform:'translate(-50%, -50%)'
+    },
+    button:{
+        marginTop:'1rem',
+        color:'tomato',
+        borderColor:'tomato'
     }
 }))
 const InputField = withStyles({
@@ -36,10 +41,11 @@ const InputField = withStyles({
 export default function Contact() {
     const classes = useStyles();
     return (
-        <Box component='div'>
+        <Box component='div'style={{background:'#233', height:'100vh'}}>
+            <Navbar/>
             <Grid container justify='center'>
                 <Box component='form' className={classes.form}>
-                    <Typography variant='h5'>
+                    <Typography variant='h5' style={{color:'tomato', textAlign:'center', textTransform:'uppercase'}}>
                         hire or contact me...
                     </Typography>
                     <InputField
@@ -69,8 +75,7 @@ export default function Contact() {
                         inputProps={{ style: { color: 'white' } }}
                     />
                     <br/>
-                    <Button variant='outlined' fullWidth endIcon={<SendIcon/>}>
-
+                    <Button className={classes.button} variant='outlined' fullWidth endIcon={<SendIcon/>}>
                         contact me
                     </Button>
                 </Box>
