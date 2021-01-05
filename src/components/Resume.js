@@ -117,116 +117,129 @@ const Resume = () => {
         Working Experience
       </Typography>
       <Box component="div" className={classes.timeLine}>
-        <Typography
+          <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2013
+          >
+          2020
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        <Box component="div" className={classes.timeLineItem} >
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            web design
+          Somboon Advance Technology (SAT)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+          New business and Product development
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Researched and Developed EV and AGV etc.
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2014
+          >
+          2012
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        <Box component="div" className={classes.timeLineItem} >
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            html & css
+          Somboon Advance Technology (SAT)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+          Sales representative
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Coorperate with inhouse and outsite customer
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2015
+          >
+          2008
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        <Box component="div" className={classes.timeLineItem} >
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+          Bangkok spring industrial (BSK)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+          Process Engineer
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Process improvement and production planing
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2017
+          >
+          2004
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        <Box component="div" className={classes.timeLineItem} >
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            Django & React
+          NHK Spring (Thailand)
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+          Process Engineer
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Process improvement and porduction facility design
+          </Typography>
+        </Box>
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+          2004
+        </Typography>
+        <Box component="div" className={classes.timeLineItem} >
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+          king mongkut's institute of technology north bangkok (KMITNB) 
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+          Graduated
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            Industrial Engineer
           </Typography>
         </Box>
       </Box>
