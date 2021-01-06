@@ -16,9 +16,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
+          <Route  path="/resume" component={Resume} />
+          <Route  path="/portfolio" component={Portfolio} />
+          <Route  path="/contact" component={Contact} />
+          <Route  path="*" component={Home} />
         </Switch>
     </React.Fragment>
   );
