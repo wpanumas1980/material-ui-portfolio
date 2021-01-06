@@ -7,20 +7,21 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
+import GitHubIcon from '@material-ui/icons/GitHub';
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/html-css-javascript-lg.jpg";
-import project2 from "../images/html-css-javascript.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import project1 from "../images/project1.png";
+import project2 from "../images/project2.png";
+import project3 from "../images/project3.png";
+import { IconButton, Link } from "@material-ui/core";
+// import project4 from "../images/mern-stack.jpg";
+// import project5 from "../images/react-redux.jpg";
+// import project6 from "../images/react.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
-    height: "100%",
+    background: "#006954",
+    height: "100vh", //height: "100%",
   },
   cardContainer: {
     maxWidth: 345,
@@ -30,53 +31,47 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Food ordering Demo",
+    description: `Firebase firestore realtime databse and React and Material UI development `,
     image: project1,
+    link:'https://github.com/wpanumas1980/myproject-food-order-management.git'
   },
   {
-    name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Basic chartJs with React",
+    description: `Basic chartJs with React and Material UI `,
     image: project2,
+    link:"https://github.com/wpanumas1980/react-mui-chartjs.git"
   },
   {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Restaurant reserve",
+    description: `React Styled component Express mySql Sequelize`,
     image: project3,
+    link:'https://github.com/chanthong/chanthong-cc7.git'
   },
-  {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project4,
-  },
-  {
-    name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project5,
-  },
-  {
-    name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project6,
-  },
+  // {
+  //   name: "Project 4",
+  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+  //   consequatur magni quod nesciunt necessitatibus molestiae non\
+  //   eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+  //   iste alias sunt veritatis nisi dolores!`,
+  //   image: project4,
+  // },
+  // {
+  //   name: "Project 5",
+  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+  //   consequatur magni quod nesciunt necessitatibus molestiae non\
+  //   eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+  //   iste alias sunt veritatis nisi dolores!`,
+  //   image: project5,
+  // },
+  // {
+  //   name: "Project 6",
+  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+  //   consequatur magni quod nesciunt necessitatibus molestiae non\
+  //   eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+  //   iste alias sunt veritatis nisi dolores!`,
+  //   image: project6,
+  // },
 ];
 
 const Portfolio = () => {
@@ -99,18 +94,23 @@ const Portfolio = () => {
                   <Typography variant="h5" gutterBottom>
                     {project.name}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary">
+                  <Typography variant="body2" color="textSecondary" style={{ height: '50px' }}>
                     {project.description}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <IconButton aria-label="github" >
+                  <Link href={project.link} color="textSecondary">
+                    <GitHubIcon fontSize="large"/>
+                  </Link>
+                </IconButton>
+                {/* <Button size="small" color="primary">
                   Share
                 </Button>
                 <Button size="small" color="primary">
                   Live Demo
-                </Button>
+                </Button> */}
               </CardActions>
             </Card>
           </Grid>

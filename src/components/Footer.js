@@ -8,13 +8,13 @@ import Instagram from "@material-ui/icons/Instagram";
 
 const useStyles = makeStyles({
   bottomNavContainer: {
-    background: "#222",
+    background: "#004d40",
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "tan",
+      fill: "#b2ebf2",
       "&:hover": {
-        fill: "tomato",
+        fill: "#26a69a",
         fontSize: "1.8rem",
       },
     },

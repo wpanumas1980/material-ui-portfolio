@@ -1,7 +1,8 @@
 body{
-  background: url('./images/coffee-apple.jpg') no-repeat center center fixed;
+  background: url('./images/coding-bg.jpg') no-repeat center center fixed;
   background:cover;
   -webkit-background:cover;
   -moz-background:cover;
   -o-background:cover;
+  background-size:100% 100vh;
 } 
