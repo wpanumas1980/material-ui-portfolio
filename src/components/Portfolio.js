@@ -101,7 +101,7 @@ const Portfolio = () => {
               </CardActionArea>
               <CardActions>
                 <IconButton aria-label="github" >
-                  <Link href={project.link} color="textSecondary">
+                  <Link href={project.link}  target="_blank" color="textSecondary">
                     <GitHubIcon fontSize="large"/>
                   </Link>
                 </IconButton>
